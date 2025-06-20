@@ -102,11 +102,11 @@ describe('valibot', () => {
       $schema: 'http://json-schema.org/draft-07/schema#',
       properties: {
         age: {type: 'number'},
-        createdAt: {type: 'string'},
+        createdAt: {type: 'string', format: 'date-time'},
         email: {format: 'email', type: 'string'},
         id: {type: 'string'},
         name: {type: 'string'},
-        updatedAt: {type: 'string'},
+        updatedAt: {type: 'string', format: 'date-time'},
       },
       required: ['age', 'createdAt', 'email', 'id', 'name', 'updatedAt'],
       type: 'object',
