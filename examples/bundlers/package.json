@@ -18,7 +18,7 @@
   "dependencies": {
     "@typeschema/main": "workspace:*",
     "@typeschema/zod": "workspace:*",
-    "zod": "^3.23.8"
+    "zod": "^3.25.67"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
