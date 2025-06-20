@@ -7,10 +7,6 @@
     "noUncheckedIndexedAccess": true,
     "moduleResolution": "Bundler",
     "module": "ESNext",
-    "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "@typeschema/core": ["packages/core/dist/index.d.ts"]
-    }
+    "noEmit": true
   }
 }
