@@ -109,17 +109,20 @@ const importZodValidationAdapter = memoize(async () => {
 
 export const validationAdapter: ValidationAdapter<AdapterResolver> = select({
   arktype: async schema => (await importArktypeValidationAdapter())(schema),
-  classValidator: async schema => (await importClassValidatorValidationAdapter())(schema),
+  classValidator: async schema =>
+    (await importClassValidatorValidationAdapter())(schema),
   deepkit: async schema => (await importDeepkitValidationAdapter())(schema),
   effect: async schema => (await importEffectValidationAdapter())(schema),
-  fastestValidator: async schema => (await importFastestValidatorValidationAdapter())(schema),
+  fastestValidator: async schema =>
+    (await importFastestValidatorValidationAdapter())(schema),
   function: async schema => (await importFunctionValidationAdapter())(schema),
   ioTs: async schema => (await importIoTsValidationAdapter())(schema),
   joi: async schema => (await importJoiValidationAdapter())(schema),
   json: async schema => (await importJsonValidationAdapter())(schema),
   ow: async schema => (await importOwValidationAdapter())(schema),
   runtypes: async schema => (await importRuntypesValidationAdapter())(schema),
-  superstruct: async schema => (await importSuperstructValidationAdapter())(schema),
+  superstruct: async schema =>
+    (await importSuperstructValidationAdapter())(schema),
   suretype: async schema => (await importSuretypeValidationAdapter())(schema),
   typebox: async schema => (await importTypeboxValidationAdapter())(schema),
   valibot: async schema => (await importValibotValidationAdapter())(schema),
