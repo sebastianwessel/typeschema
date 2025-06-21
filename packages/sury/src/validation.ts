@@ -9,7 +9,8 @@ export const validationAdapter: ValidationAdapter<
     const result = await validate(data);
     if ('value' in result) {
       return {
-        data: result.value,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        data: result.value as any,
         success: true,
       };
     }
