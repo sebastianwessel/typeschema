@@ -79,6 +79,10 @@ const LIBRARIES: Record<
     github: 'vinejs/vine',
     url: 'https://vinejs.dev',
   },
+  sury: {
+    github: 'DZakh/sury',
+    url: 'https://github.com/DZakh/sury',
+  },
   yup: {
     github: 'jquense/yup',
     url: 'https://github.com/jquense/yup',

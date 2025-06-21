@@ -42,6 +42,11 @@ const importValibotSerializationAdapter = memoize(async () => {
   return serializationAdapter;
 });
 
+const importSurySerializationAdapter = memoize(async () => {
+  const {serializationAdapter} = await import('@typeschema/sury');
+  return serializationAdapter;
+});
+
 const importYupSerializationAdapter = memoize(async () => {
   const {serializationAdapter} = await import('@typeschema/yup');
   return serializationAdapter;
@@ -69,6 +74,7 @@ export const serializationAdapter: SerializationAdapter<AdapterResolver> = selec
   typebox: async schema => (await importTypeboxSerializationAdapter())(schema),
   valibot: async schema => (await importValibotSerializationAdapter())(schema),
   valita: unsupportedAdapter<AdapterResolvers['valita']>('@typeschema/valita'),
+  sury: async schema => (await importSurySerializationAdapter())(schema),
   vine: unsupportedAdapter<AdapterResolvers['vine']>('@typeschema/vine'),
   yup: async schema => (await importYupSerializationAdapter())(schema),
   zod: async schema => (await importZodSerializationAdapter())(schema),

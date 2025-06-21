@@ -264,6 +264,16 @@ We value flexibility, which is why there are multiple ways of using TypeSchema:
     <td align="left"><nobr><code><a href="https://github.com/decs/typeschema/tree/main/packages/valita">@typeschema/valita</a></code></nobr></td>
     <td align="right"><a href="https://www.npmjs.com/package/@typeschema/valita" rel="nofollow"><img src="https://img.shields.io/npm/dw/@typeschema/valita.svg?label=" alt="npm downloads"></a></td>
   </tr>
+  <tr>
+    <td align="left"><nobr><a href="https://github.com/DZakh/sury" rel="nofollow">sury</a></nobr></td>
+    <td align="left"><a href="https://github.com/DZakh/sury" rel="nofollow"><img src="https://img.shields.io/github/stars/DZakh/sury?style=social" alt="GitHub stars"></a></td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="left"><nobr><code><a href="https://github.com/decs/typeschema/tree/main/packages/sury">@typeschema/sury</a></code></nobr></td>
+    <td align="right"><a href="https://www.npmjs.com/package/@typeschema/sury" rel="nofollow"><img src="https://img.shields.io/npm/dw/@typeschema/sury.svg?label=" alt="npm downloads"></a></td>
+  </tr>
 </table>
 
 > [!NOTE]
