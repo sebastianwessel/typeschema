@@ -1,8 +1,8 @@
 import type {Infer, InferIn} from '..';
 
 import {initTRPC} from '@trpc/server';
-import * as S from 'sury';
 import {expectTypeOf} from 'expect-type';
+import * as S from 'sury';
 import {describe, expect, test} from 'vitest';
 
 import {assert, toJSONSchema, validate, wrap} from '..';
