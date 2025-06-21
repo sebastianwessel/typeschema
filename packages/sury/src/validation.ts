@@ -15,7 +15,12 @@ export const validationAdapter: ValidationAdapter<
       };
     }
     return {
-      issues: result.issues.map(({message, path}) => ({message, path})),
+      issues: result.issues.map(({message, path}) => ({
+        message,
+        path: path?.map(segment =>
+          typeof segment === 'object' ? segment.key : segment,
+        ),
+      })),
       success: false,
     };
   };
